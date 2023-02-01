@@ -2,10 +2,28 @@ body{
 	margin: 0;
 }
 
-p{
+*{
 	margin: 0;
 	font-family: Montserrat;
 
+}
+
+/*-------- Полоса меню ----------------*/
+.top-menu{
+	display: inline-block;
+}
+
+nav.top-menu{
+	position: absolute;
+	top: 10%;
+	right:5%;
+}
+
+nav a{
+	margin: 0 10px;
+	padding: 3px 10px;
+	color: rgb(8, 20, 20);
+	background-color: rgba(0, 255, 255, 0.3);
 }
 
 /*-------- Первая станица ----------------*/
@@ -71,4 +89,11 @@ article.herro-biography main p {
 /*Ссылка на Wik */
 a.article-text-p4{
 	color:red;
+}
+
+
+/* -----------Общие настройки стилей----------- */
+/*Определяем первую букву в статье*/ 
+article.herro-biography p:first-letter, a.top-menu::first-letter{
+	font-size: 1.3em;
 }
