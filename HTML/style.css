@@ -162,7 +162,7 @@ main.herro-filmography{
 }
 
 /*Описание блока одного фильма*/
-main.herro-filmography div.movie{
+main.herro-filmography a.movie{
 	display: inline-block;
 	/* border: 3px solid black; */
 }
