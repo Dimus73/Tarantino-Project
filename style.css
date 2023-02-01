@@ -39,7 +39,7 @@ section.page-01{
 	top:0;
 	left: 0;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	background-image: url("Images/back-ground-01.jpg");
 	background-size: cover;
 
@@ -50,16 +50,18 @@ section.page-01{
 	position: absolute;
 	top:250px;
 	right:80px;
-	font-size: 80px;
+	font-size: 8vw;
 	font-weight: 700;
 	color: rgb(165, 30, 22);
 	text-align:right;
 }
 
+/* Дополнительная страница для верного отображения */
  .page-01-additional{
-	display: block;
+	display: inline-block;
 	position: relative;
-	height: 600px;
+	width: 100vw;
+	height: 100vh;
 
 }
 
@@ -109,9 +111,9 @@ div.herro-biography{
 	display: inline-block;
 	position: absolute;
 	right: -100px;
-	top: calc(20% / 2);
-	width: 48%;
-	height: 80%;
+	top: 60px;
+	width: 543px;
+	height: 480px;
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -120,7 +122,7 @@ img.herro-biography{
 	position: relative;
 	left: -150px;
 	/* max-width: 100%; */
-	height: 100%; */
+	height: 600px;
 	object-fit: cover;
 
 }
@@ -145,7 +147,7 @@ margin: auto 0;
 }
 /* Описываем заголовок страницы */
 section.page-03 header{
-	display: inline-block;
+	display: block;
 	font-size: 30px;
 	color: rgb(133, 68, 60);
 	margin-top: 50px;
@@ -157,10 +159,10 @@ main.herro-filmography{
 	position: relative;
 	display:inline-flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content:center;
 	flex-wrap: wrap;
-	max-width: 1100px;
-	margin: auto 0;
+	/* max-width: 1100px; */
+	margin: 0 auto;
 	top: 0;
 	left: 0;
 }
@@ -170,8 +172,8 @@ main.herro-filmography a.movie{
 	display: inline-block;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
 	/* border: 3px solid black; */
 }
 
@@ -206,6 +208,9 @@ main.herro-filmography div.movie-year{
 	color: black;
 	font-weight: 400;
 	font-size: 12px;
+	text-decoration: none;
+}
+div.movie-year p{
 	text-decoration: none;
 }
 
