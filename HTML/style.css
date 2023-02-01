@@ -15,15 +15,18 @@ body{
 
 nav.top-menu{
 	position: absolute;
-	top: 10%;
+	top: 5%;
 	right:5%;
 }
 
 nav a{
+	box-sizing: border-box;
 	margin: 0 10px;
-	padding: 3px 10px;
+	padding: 3px 10px 5px 10px;
+	font-size: 12px;
 	color: rgb(8, 20, 20);
-	background-color: rgba(0, 255, 255, 0.3);
+	background-color: rgba(0, 255, 255, 0.5);
+	border-radius: 10px;
 }
 
 /*-------- Первая станица ----------------*/
