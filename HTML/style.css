@@ -17,7 +17,7 @@ nav.top-menu{
 	position: fixed;
 	display: flex;
 	top: 5%;
-	right:0%;
+	right:1%;
 	justify-content: space-around;
 }
 
@@ -72,6 +72,7 @@ section.page-02{
 	background: rgb(8, 20, 20);
 	width: 100%;
 	padding-bottom: 20px;
+	overflow: hidden;
 }
 
 /*Определяем свойство статьи*/
@@ -82,11 +83,6 @@ article.herro-biography{
 	max-width: 600px;
 	color: white;
 	margin-bottom: 20px;
-}
-
-/*Определяем первую букву в статье*/ 
-article.herro-biography p:first-letter{
-	font-size: 1.3em;
 }
 
 /*Работаем с заголовком статьи*/
@@ -108,10 +104,107 @@ a.article-text-p4{
 	color:red;
 }
 
+/* Вставляем изображение на страницу */
+div.herro-biography{
+	display: inline-block;
+	position: absolute;
+	right: -100px;
+	top: calc(20% / 2);
+	width: 48%;
+	height: 80%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+img.herro-biography{
+	position: relative;
+	left: -150px;
+	/* max-width: 100%; */
+	height: 100%; */
+	object-fit: cover;
+
+}
+
+/*-------- Третья станица ----------------*/
+section.page-03{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: rgb(207 208 210);
+}
+
+/* Описываем статью для страницы */
+article.herro-filmography{
+display: inline-block;
+position: relative;
+left: 7%;
+width: 86%;
+
+}
+/* Описываем заголовок страницы */
+section.page-03 header{
+	font-size: 30px;
+	color: rgb(133, 68, 60);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Описываем блок с фильмами */
+main.herro-filmography{
+	position: relative;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	top: 0;
+	left: 0;
+}
+
+/*Описание блока одного фильма*/
+main.herro-filmography div.movie{
+	display: inline-block;
+	/* border: 3px solid black; */
+}
+
+/* Описание обложки фильма */
+main.herro-filmography div.cover{
+	width: 183px;
+	height: 271px;
+	box-shadow: 7px 10px 7px -4px #aaaaaa;
+}
+
+/*Описание картинки фильма*/
+div.cover img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Описание названия фильма */
+main.herro-filmography div.movie-name{
+	font-weight: 700;
+	font-size: 15px;
+	margin-top: 12px;
+}
+
+/* Описание год фильма */
+main.herro-filmography div.movie-year{
+	font-size: 12px;
+}
+
+
+
+
+
+
 
 /* -----------Общие настройки стилей----------- */
 /*Определяем первую букву в статье*/ 
-article.herro-biography p:first-letter, a.top-menu::first-letter{
+article.herro-biography p:first-letter,
+ a.top-menu::first-letter,
+ header.herro-filmography p:first-letter
+ {
 	font-size: 1.3em;
 }
 
@@ -125,4 +218,9 @@ article.herro-biography p:first-letter, a.top-menu::first-letter{
 
 .layer-2{
 	z-index: 2;
+}
+
+/* Этим мы убираем зазоры между страницами */
+main.mane-contayner{
+	font-size: 0;
 }
