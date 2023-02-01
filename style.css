@@ -175,6 +175,11 @@ main.herro-filmography a.movie{
 	margin-left: 20px;
 	margin-right: 20px;
 	/* border: 3px solid black; */
+	transition: all 0.5s;
+}
+/*Маштабирвание при наведении курсора*/
+main.herro-filmography a.movie:hover {
+	transform: scale(1.1);
 }
 
 /* Описание обложки фильма */
