@@ -262,15 +262,11 @@ article.herro-avards{
 
 /* Описываем блок с наградами */
 main.herro-avards{
-	position: relative;
 	display:inline-flex;
 	flex-direction: row;
 	justify-content:center;
 	flex-wrap: wrap;
-	margin: 0 auto;
-	top: 0;
-	left: 0;
-}
+	width: 100%;}
 
 /*Описание блока одной награды*/
 main.herro-avards a.avard{
@@ -282,9 +278,14 @@ main.herro-avards a.avard{
 	/* border: 3px solid black; */
 	transition: all 0.5s;
 }
+/*Трансформирование при наведении*/
+main.herro-avards a.avard:hover {
+	transform: scale(1.1);
+}
 
 /*Описание картинки награды*/
-div.award-image img{
+div.avard-image img{
+	display: block;
 	width: 240px;
 	height: 240px;
 	object-fit: cover;
@@ -296,9 +297,43 @@ table.avard-date-table{
 	color: white;
 	font-size: 12px;
 	text-decoration: none;
+	margin: 3vw auto;
+}
+/*Форматирование таблицы*/
+.avard-date-table .movie-name{
+	font-weight: 700;
+	height: 3px;
+}
+.avard-date-table .avard-name{
+	height: 18px;
+}
+.avard-date-table td{
+	vertical-align: top;
 }
 
+/*-------- Страница футера ----------------*/
+footer.final-footer{
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: white;
+}
 
+/*Настройка картинок*/
+footer.final-footer img{
+	height: 60px;
+	margin: 10px 50px;
+}
+
+/* черная линия*/
+div.black-line{
+	width: 100%;
+	height: 30px;
+	background-color: black;
+}
 
 /* -----------Общие настройки стилей----------- */
 /*Определяем первую букву в статье*/ 
