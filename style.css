@@ -36,6 +36,10 @@ nav a:hover{
 	transform: scale(1.2);
 }
 
+.side-menu-button{
+	display: block;
+}
+
 /*-------- Первая станица -----------------*/
 /*Начинаем описание первой страницы*/
 section.page-01{
@@ -372,3 +376,23 @@ main.mane-contayner{
 html {
   scroll-behavior: smooth;
 }
+
+
+/* >>>>>> Мобильная адаптация 480 px<<<<<<< */
+@media screen and (max-width: 480px) {
+	nav.full-screen{
+		display: none;
+	}
+	
+	.side-menu-button{
+		display: block;
+		position: relative;
+		background-color: black;
+		/* width: 20px;
+		height: 20px; */
+		font-size: 50px;
+		color: white;
+		text-align: right;
+	}
+}
+
