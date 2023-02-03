@@ -382,7 +382,7 @@ div.black-line{
 article.herro-biography p:first-letter,
  a.top-menu:first-letter,
  header.herro-filmography p:first-letter,
- article.herro-avards header:first-letter,
+ article.herro-avards header:first-letter
  {
 	font-size: 1.3em;
 }
@@ -410,12 +410,80 @@ html {
 }
 
 
+/* >>>>>> Мобильная адаптация 800 px<<<<<<< */
+
+@media screen and (max-width: 800px){
+	section.page-02{
+		display: inline-flex;
+		flex-wrap: wrap;
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+	/*Определяем свойство статьи*/
+	article.herro-biography{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		/* position: relative; */
+		left: 5%;
+		max-width: initial;
+		width: 90%;
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	/*Работаем с заголовком статьи*/
+	section.page-02 header{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		color: rgb(163 68 60);
+		font-size: 30px;
+	}
+
+	/*Определяем текст статьи*/
+	article.herro-biography main p {
+		font-size: 12px;
+		margin-top: 15px;
+	}
+
+	/*Ссылка на Wik */
+	a.article-text-p4{
+		color:red;
+	}
+
+	/* Вставляем изображение на страницу */
+	div.herro-biography{
+		display: flex;
+		position: relative;
+		/* display: inline-block; */
+		/* position: absolute; */
+		right: 0px;
+		order: -1;
+		/* top: calc((100% - 70vw)/ 2); */
+		width: 100%;
+		border-radius: initial;
+		overflow: hidden;
+	}
+
+	img.herro-biography{
+		display: flex;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+	}
+}
+
 /* >>>>>> Мобильная адаптация 480 px<<<<<<< */
 @media screen and (max-width: 480px) {
+
 	nav.full-screen{
 		display: none;
 	}
-	
+	/*-------- Меню  ----------------*/
+
 	.side-menu-button{
 		display: flex;
 		position: fixed;
@@ -431,5 +499,30 @@ html {
 		color: white;
 		justify-content: center;
 	}
+
+	/*-------- Третья станица ----------------*/
+/*Описание блока одного фильма*/
+main.herro-filmography a.movie{
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	/* border: 3px solid black; */
+	transition: all 0.5s;
+}
+
+	/*-------- Четвертая станица ----------------*/
+/*Описание блока одной награды*/
+main.herro-avards a.avard{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	/* border: 3px solid black; */
+	transition: all 0.5s;
+}
+
 }
 
