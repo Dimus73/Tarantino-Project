@@ -57,7 +57,7 @@ nav.side-menu{
 
 nav a.side-menu{
 	display: inline-flex;
-	background-color: red;
+	background-color: rgb(173, 37, 19);
 	color: white;
 	font-size: 30px;
 	text-decoration: none;
@@ -495,7 +495,7 @@ html {
 	.side-menu-button{
 		display: flex;
 		position: fixed;
-		background-color: rgba(210, 0, 0, 0.5);
+		background-color: rgba(173, 37, 19, 0.5);
 		top: 0;
 		right: 0;
 		margin-right: 10px;
@@ -518,7 +518,7 @@ html {
 		width: 100vw;
 		height: 100vh;
 		background-image:none;
-		background-color: red;
+		background-color:rgb(173, 37, 19);
 		background-size: cover;
 
 	}
