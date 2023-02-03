@@ -97,6 +97,12 @@ section.page-01{
 	text-align:right;
 }
 
+	/*Скрываем фото на фоне*/
+	img.herro-name{
+		display:none;
+	}
+
+
 /* Дополнительная страница для верного отображения */
  .page-01-additional{
 	display: inline-block;
@@ -413,6 +419,39 @@ html {
 /* >>>>>> Мобильная адаптация 800 px<<<<<<< */
 
 @media screen and (max-width: 800px){
+	/*-------- Первая станица -----------------*/
+/*Начинаем описание первой страницы*/
+	section.page-01{
+		display: block;
+		position: fixed;
+		top:0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-image:none;
+		background-color: red;
+		background-size: cover;
+
+	}
+	/*Настраиваем фото на странице*/
+	img.herro-name{
+		display:inline-block;
+		position: relative;
+		width:150%;
+		top:33%;
+		margin: auto;
+	}
+	#herro-name{
+		display: inline-block;
+		position: absolute;
+		top: 14%;
+		right:6%;
+		font-size: 13vw;
+		font-weight: 700;
+		color: rgb(255, 255, 255);
+		text-align:right;
+	}	
+	/*-------- Вторая станица -----------------*/
 	section.page-02{
 		display: inline-flex;
 		flex-wrap: wrap;
