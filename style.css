@@ -53,7 +53,7 @@ section.page-01{
 #herro-name{
 	display: inline-block;
 	position: absolute;
-	top:250px;
+	bottom: 26%;
 	right:6%;
 	font-size: 8vw;
 	font-weight: 700;
