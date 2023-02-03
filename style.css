@@ -419,7 +419,7 @@ html {
 /* >>>>>> Мобильная адаптация 800 px<<<<<<< */
 
 @media screen and (max-width: 800px){
-	}	
+		
 	/*-------- Вторая станица -----------------*/
 	section.page-02{
 		display: inline-flex;
@@ -540,6 +540,7 @@ html {
 		color: rgb(255, 255, 255);
 		text-align:right;
 	}
+
 	/*-------- Третья станица ----------------*/
 /*Описание блока одного фильма*/
 main.herro-filmography a.movie{
