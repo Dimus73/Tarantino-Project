@@ -378,9 +378,29 @@ footer.final-footer img{
 }
 /* черная линия*/
 div.black-line{
+	display: inline-flex;
 	width: 100%;
-	height: 30px;
+	height: 40px;
 	background-color: black;
+	justify-content: center;
+	align-items: center;
+}
+
+.black-line form{
+	display: flex;
+	height: 80%;
+	margin: auto 10px;
+	align-items:stretch;
+}
+
+.black-line p{
+	display: flex;
+	color: white;
+	font-size: 10px;
+}
+
+.black-line p label{
+	align-self: center;
 }
 
 /* -----------Общие настройки стилей----------- */
