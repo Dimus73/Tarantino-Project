@@ -24,12 +24,13 @@
 			<a class="top-menu" href="#awards">AWARDS</a>
 		</nav>
 		<!-- Для маленькиз экранов -->
-		<div class="side-menu-button layer-2">X</div>
-		<nav class="side-menu small-screen layer-2">
-			<a class="side-menu" href="#home">HOME</a>
-			<a class="side-menu" href="#biography">BIOGRAPHY</a>
-			<a class="side-menu" href="#filmography">FILMOGRAPHY</a>
-			<a class="side-menu" href="#awards">AWARDS</a>
+		<div class="side-menu-button layer-2" onclick="OpenSideMenu()">☰</div>
+		<nav id="side-menu" class="side-menu small-screen layer-2" style="width:0%">
+			<a class="side-menu cansel" onclick="CloseSideMenu()">X</a>
+			<a class="side-menu" href="#home" onclick="CloseSideMenu()">HOME</a>
+			<a class="side-menu" href="#biography" onclick="CloseSideMenu()">BIOGRAPHY</a>
+			<a class="side-menu" href="#filmography" onclick="CloseSideMenu()">FILMOGRAPHY</a>
+			<a class="side-menu" href="#awards" onclick="CloseSideMenu()">AWARDS</a>
 		</nav>
 
 <!-- Страница 01 -->
@@ -339,5 +340,14 @@
 		</a>
 		<div class="black-line"></div>
 	</footer>
+
+	<script>
+		function OpenSideMenu(){
+			document.getElementById("side-menu").style.width = "100%"
+		}
+		function CloseSideMenu(){
+			document.getElementById("side-menu").style.width = "0%"
+		}
+	</script>
 </body>
 </html>

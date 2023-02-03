@@ -21,7 +21,7 @@ nav.top-menu{
 	justify-content: space-around;
 }
 
-nav a{
+nav a.top-menu{
 	box-sizing: border-box;
 	margin: 0 10px;
 	padding: 3px 10px 5px 10px;
@@ -31,15 +31,47 @@ nav a{
 	border-radius: 10px;
 }
 
-nav a:hover{
+nav a.top-menu:hover{
 	background-color: rgb(200, 0, 0);
 	transform: scale(1.2);
 }
 
+/* >>>>>> Мобильная адаптация меню px<<<<<<< */
 .side-menu-button{
 	display: block;
 }
 
+nav.side-menu{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	position: fixed;
+	background-color: black;
+	top: 0;
+	left: 0;
+	/* width: 100%; */
+	height: 100%;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+nav a.side-menu{
+	display: inline-flex;
+	background-color: red;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: 700;
+	margin: 10px 30px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+nav a.cansel{
+	width: 80px;
+}
 /*-------- Первая станица -----------------*/
 /*Начинаем описание первой страницы*/
 section.page-01{
@@ -350,7 +382,7 @@ div.black-line{
 article.herro-biography p:first-letter,
  a.top-menu:first-letter,
  header.herro-filmography p:first-letter,
- article.herro-avards header:first-letter
+ article.herro-avards header:first-letter,
  {
 	font-size: 1.3em;
 }
@@ -385,14 +417,19 @@ html {
 	}
 	
 	.side-menu-button{
-		display: block;
-		position: relative;
-		background-color: black;
-		/* width: 20px;
-		height: 20px; */
+		display: flex;
+		position: fixed;
+		background-color: rgba(210, 0, 0, 0.5);
+		top: 0;
+		right: 0;
+		margin-right: 10px;
+		margin-top: 10px;
+		width: 75px;
+		height: 75px;
+		border-radius: 10px;
 		font-size: 50px;
 		color: white;
-		text-align: right;
+		justify-content: center;
 	}
 }
 
