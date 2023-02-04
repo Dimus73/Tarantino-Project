@@ -1,3 +1,4 @@
+/* Setting basic parameters */
 body{
 	margin: 0;
 }
@@ -8,7 +9,8 @@ body{
 
 }
   
-/*-------- Полоса меню ----------------*/
+/*-------- Navigation menu ----------------*/
+/* Large screen menu */
 .top-menu{
 	display: inline-block;
 }
@@ -36,7 +38,8 @@ nav a.top-menu:hover{
 	transform: scale(1.2);
 }
 
-/* >>>>>> Мобильная адаптация меню px<<<<<<< */
+/* >>>>>> Mobile adaptation <<<<<<< */
+/* Small screen menu (sidebar) */
 .side-menu-button{
 	display: block;
 }
@@ -72,8 +75,10 @@ nav a.side-menu{
 nav a.cansel{
 	width: 80px;
 }
-/*-------- Первая станица -----------------*/
-/*Начинаем описание первой страницы*/
+
+
+/*-------- Page 01 -----------------*/
+/*Beginning page decoration. Setting the background image*/
 section.page-01{
 	display: block;
 	position: fixed;
@@ -86,6 +91,7 @@ section.page-01{
 
 }
 
+/* Formatting the tag with the name of the hero */
 #herro-name{
 	display: inline-block;
 	position: absolute;
@@ -97,13 +103,13 @@ section.page-01{
 	text-align:right;
 }
 
-	/*Скрываем фото на фоне*/
+/* >>>>>> Mobile adaptation <<<<<<< */
+	/*Hide the hero image from the page. It is needed for the small screen only.*/
 	img.herro-name{
 		display:none;
 	}
 
-
-/* Дополнительная страница для верного отображения */
+/* Additional blank and transparent page. Needed for visual effects. */
  .page-01-additional{
 	display: inline-block;
 	position: relative;
@@ -112,8 +118,8 @@ section.page-01{
 
 }
 
-/*-------- Вторая станица ----------------*/
-/*Начинаем описание второй страницы*/
+/*-------- Page 02 ----------------*/
+/*Beginning page decoration. Setting the background image*/
 section.page-02{
 	display: inline-block;
 	position: relative;
@@ -124,7 +130,7 @@ section.page-02{
 	overflow: hidden;
 }
 
-/*Определяем свойство статьи*/
+/*Describing article properties*/
 article.herro-biography{
 	position: relative;
 	left: 7%;
@@ -134,7 +140,7 @@ article.herro-biography{
 	margin-bottom: 20px;
 }
 
-/*Работаем с заголовком статьи*/
+/*Describing article title properties*/
 section.page-02 header{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -142,18 +148,18 @@ section.page-02 header{
 	font-size: 30px;
 }
 
-/*Определяем текст статьи*/
+/*Describing the properties of the article text*/
 article.herro-biography main p {
 	font-size: 12px;
 	margin-top: 15px;
 }
 
-/*Ссылка на Wik */
+/*Describe the properties of the link to Wik at the end of the article */
 a.article-text-p4{
 	color:red;
 }
 
-/* Вставляем изображение на страницу */
+/* Describing image properties on the page */
 div.herro-biography{
 	display: inline-block;
 	position: absolute;
@@ -167,14 +173,13 @@ div.herro-biography{
 
 img.herro-biography{
 	position: relative;
-	/* left: -150px; */
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 
 }
 
-/*-------- Третья станица ----------------*/
+/*-------- Page 03 ----------------*/
 section.page-03{
 	display: inline-block;
 	position: relative;
@@ -183,7 +188,7 @@ section.page-03{
 	background-color: rgb(207 208 210);
 }
 
-/* Описываем статью для страницы */
+/*Describing article properties*/
 article.herro-filmography{
 display: inline-block;
 position: relative;
@@ -192,7 +197,7 @@ width: 86%;
 margin: auto 0;
 
 }
-/* Описываем заголовок страницы */
+/*Describing article title properties*/
 section.page-03 header{
 	display: block;
 	font-size: 30px;
@@ -201,7 +206,7 @@ section.page-03 header{
 	/* margin-bottom: 50px; */
 }
 
-/* Описываем блок с фильмами */
+/* Describing the properties of the block containing movies */
 main.herro-filmography{
 	position: relative;
 	display:inline-flex;
@@ -213,22 +218,21 @@ main.herro-filmography{
 	left: 0;
 }
 
-/*Описание блока одного фильма*/
+/* Describing properties of a single movie block */
 main.herro-filmography a.movie{
 	display: inline-block;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
-	/* border: 3px solid black; */
 	transition: all 0.5s;
 }
-/*Маштабирвание при наведении курсора*/
+/* Block scaling on hover */
 main.herro-filmography a.movie:hover {
 	transform: scale(1.1);
 }
 
-/* Описание обложки фильма */
+/* Describing properties of the movie cover */
 main.herro-filmography div.cover{
 	display: block;
 	width: 183px;
@@ -236,14 +240,14 @@ main.herro-filmography div.cover{
 	box-shadow: 7px 10px 7px -4px #aaaaaa;
 }
 
-/*Описание картинки фильма*/
+/*Movie image property description*/
 div.cover img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-/* Описание названия фильма */
+/* Movie name property description */
 main.herro-filmography div.movie-name{
 	display: inline-block;
 	color: black;
@@ -253,7 +257,7 @@ main.herro-filmography div.movie-name{
 	width: 183px;
 }
 
-/* Описание год фильма */
+/* Description of the movie year property */
 main.herro-filmography div.movie-year{
 	display: block;
 	color: black;
@@ -265,7 +269,7 @@ div.movie-year p{
 	text-decoration: none;
 }
 
-/*Описание футера*/
+/* Page footer property description */
 footer.herro-filmography{
 	color: black;
 	font-size: 12px;
@@ -275,16 +279,15 @@ footer.herro-filmography{
 
 
 
-/*-------- Четвертая станица ----------------*/
+/*-------- Page 04 ----------------*/
 section.page-04{
 	display: inline-block;
 	position: relative;
 	width: 100%;
-	/* height: 600px; */
 	background-color: rgb(173, 37, 19);
 }
 
-/* Описываем статью для наград */
+/* Description of the award article property */
 article.herro-avards{
 	display: inline-block;
 	position: relative;
@@ -293,8 +296,8 @@ article.herro-avards{
 	margin: auto 0;
 	
 	}
-	/* Описываем заголовок страницы */
-	article.herro-avards header{
+/*Describing article title properties*/
+article.herro-avards header{
 		display: block;
 		font-size: 30px;
 		color: white;
@@ -302,7 +305,7 @@ article.herro-avards{
 		/* margin-bottom: 50px; */
 	}
 
-/* Описываем блок с наградами */
+/* Describing the properties of the block containing avards */
 main.herro-avards{
 	display:inline-flex;
 	flex-direction: row;
@@ -310,7 +313,7 @@ main.herro-avards{
 	flex-wrap: wrap;
 	width: 100%;}
 
-/*Описание блока одной награды*/
+/*Single Reward Block Property Description*/
 main.herro-avards a.avard{
 	display: inline-block;
 	margin-top: 50px;
@@ -320,12 +323,12 @@ main.herro-avards a.avard{
 	/* border: 3px solid black; */
 	transition: all 0.5s;
 }
-/*Трансформирование при наведении*/
+/*Hover animation added*/
 main.herro-avards a.avard:hover {
 	transform: scale(1.1);
 }
 
-/*Описание картинки награды*/
+/*Description of the properties of the award image*/
 div.avard-image img{
 	display: block;
 	width: 240px;
@@ -341,7 +344,7 @@ table.avard-date-table{
 	text-decoration: none;
 	margin: 3vw auto;
 }
-/*Форматирование таблицы*/
+/*Description of the properties of the table under the awards*/
 .avard-date-table .movie-name{
 	font-weight: 700;
 	height: 3px;
@@ -353,7 +356,8 @@ table.avard-date-table{
 	vertical-align: top;
 }
 
-/*-------- Страница футера ----------------*/
+/*-------- Footer ----------------*/
+/* Description of site footer properties */
 footer.final-footer{
 	display: inline-flex;
 	position: relative;
@@ -364,19 +368,19 @@ footer.final-footer{
 	background-color: white;
 }
 
-/*Настройка картинок*/
+/*Picture settings*/
 footer.final-footer img{
 	height: 60px;
 	margin: 10px 50px;
 }
 
-/*Срезать уголки на Inst*/
+/*Adjusting the corners of a single picture (Inst)*/
 #inst{
 	display: block;
 	border-radius: 16px;
 	overflow: hidden;
 }
-/* черная линия*/
+/* Black line. */
 div.black-line{
 	display: inline-flex;
 	width: 100%;
@@ -389,7 +393,7 @@ div.black-line{
 .black-line form{
 	display: flex;
 	height: 80%;
-	margin: auto 10px;
+	margin: auto 10 px;
 	align-items:stretch;
 }
 
@@ -403,8 +407,8 @@ div.black-line{
 	align-self: center;
 }
 
-/* -----------Общие настройки стилей----------- */
-/*Определяем первую букву в статье*/ 
+/* -----------General settings for different elements----------- */
+/*Make the first letter larger*/ 
 article.herro-biography p:first-letter,
  a.top-menu:first-letter,
  header.herro-filmography p:first-letter,
@@ -413,6 +417,7 @@ article.herro-biography p:first-letter,
 	font-size: 1.3em;
 }
 
+/* Layer order description */
 .layer-0{
 	z-index: 0;
 }
@@ -425,22 +430,22 @@ article.herro-biography p:first-letter,
 	z-index: 2;
 }
 
-/* Этим мы убираем зазоры между страницами */
+/* Remove gaps between sections */
 main.mane-contayner{
 	font-size: 0;
 }
 
-/*Добавлено для плавной прокрутки*/
+/*Setting the smooth scrolling property*/
 html {
   scroll-behavior: smooth;
 }
 
 
-/* >>>>>> Мобильная адаптация 800 px<<<<<<< */
+/* >>>>>> Adaptation for screen less than 800px px<<<<<<< */
 
 @media screen and (max-width: 800px){
 		
-	/*-------- Вторая станица -----------------*/
+	/*-------- Page 02 -----------------*/
 	section.page-02{
 		display: inline-flex;
 		flex-wrap: wrap;
@@ -448,12 +453,12 @@ html {
 		width: 100%;
 		overflow: hidden;
 	}
-	/*Определяем свойство статьи*/
+
+	/* Article properties */
 	article.herro-biography{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		/* position: relative; */
 		left: 5%;
 		max-width: initial;
 		width: 90%;
@@ -461,7 +466,7 @@ html {
 		margin-bottom: 20px;
 	}
 
-	/*Работаем с заголовком статьи*/
+	/* Article Title Properties */
 	section.page-02 header{
 		margin-top: 50px;
 		margin-bottom: 50px;
@@ -469,18 +474,18 @@ html {
 		font-size: 30px;
 	}
 
-	/*Определяем текст статьи*/
+	/* Article text properties */
 	article.herro-biography main p {
 		font-size: 12px;
 		margin-top: 15px;
 	}
 
-	/*Ссылка на Wik */
+	/*Link Properties Wik */
 	a.article-text-p4{
 		color:red;
 	}
 
-	/* Вставляем изображение на страницу */
+	/* Hero image properties */
 	div.herro-biography{
 		display: flex;
 		position: relative;
@@ -504,14 +509,15 @@ html {
 	}
 }
 
-/* >>>>>> Мобильная адаптация 480 px<<<<<<< */
+/* >>>>>> Adaptation for screen less than 480 px<<<<<<< */
 @media screen and (max-width: 480px) {
 
+	/* Stop showing big menu */
 	nav.full-screen{
 		display: none;
 	}
-	/*-------- Меню  ----------------*/
-
+	/*-------- Mobile menu  ----------------*/
+	/* Set side menu options */
 	.side-menu-button{
 		display: flex;
 		position: fixed;
@@ -528,8 +534,8 @@ html {
 		justify-content: center;
 	}
 
-	/*-------- Первая станица -----------------*/
-	/*Начинаем описание первой страницы*/
+	/*-------- Page 01 -----------------*/
+	/* Set the properties of the first page */
 	section.page-01{
 		display: block;
 		position: fixed;
@@ -542,7 +548,7 @@ html {
 		background-size: cover;
 
 	}
-	/*Настраиваем фото на странице*/
+	/* Set photo properties */
 	img.herro-name{
 		display:inline-block;
 		position: relative;
@@ -550,6 +556,8 @@ html {
 		top:33%;
 		margin: auto;
 	}
+	
+	/* Set properties of the hero's name */
 	#herro-name{
 		display: inline-block;
 		position: absolute;
@@ -561,8 +569,8 @@ html {
 		text-align:right;
 	}
 
-	/*-------- Третья станица ----------------*/
-/*Описание блока одного фильма*/
+	/*-------- Page 03 ----------------*/
+/*Small changes in the block with one movie*/
 main.herro-filmography a.movie{
 	display: inline-block;
 	margin-top: 20px;
@@ -573,8 +581,8 @@ main.herro-filmography a.movie{
 	transition: all 0.5s;
 }
 
-	/*-------- Четвертая станица ----------------*/
-/*Описание блока одной награды*/
+	/*-------- Page 04 ----------------*/
+/* Small changes in the block with one avard */
 main.herro-avards a.avard{
 	display: inline-block;
 	margin-top: 10px;
